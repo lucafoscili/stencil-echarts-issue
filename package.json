@@ -38,8 +38,11 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"
   },
+  "dependencies": {
+    "echarts": "^5.5.1"
+  },
   "devDependencies": {
-    "@stencil/core": "^4.7.0",
+    "@stencil/core": "^4.21.0",
     "@types/jest": "^29.5.6",
     "@types/node": "^16.18.11",
     "jest": "^29.7.0",

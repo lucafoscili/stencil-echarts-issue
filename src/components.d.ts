@@ -5,20 +5,18 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { XAXisOption as XAXisComponentOption, YAXisOption as YAXisComponentOption } from "echarts";
+export { XAXisOption as XAXisComponentOption, YAXisOption as YAXisComponentOption } from "echarts";
 export namespace Components {
     interface MyComponent {
         /**
           * The first name
          */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
+        "x": XAXisComponentOption;
         /**
           * The middle name
          */
-        "middle": string;
+        "y": YAXisComponentOption;
     }
 }
 declare global {
@@ -37,15 +35,11 @@ declare namespace LocalJSX {
         /**
           * The first name
          */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
+        "x"?: XAXisComponentOption;
         /**
           * The middle name
          */
-        "middle"?: string;
+        "y"?: YAXisComponentOption;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;
